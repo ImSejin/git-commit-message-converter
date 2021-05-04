@@ -19,6 +19,38 @@ Content of `.commit-message-templates` is consist of three part.
 
 `keyword`, `gitmoji`, `type`.
 
+<br>
+
+Here is example.
+
+```text
+keyword,gitmoji,type // DO NOT EDIT THIS
+bug,🐞,Fix
+imp,⚡️,Improve
+mg,🔀,Merge
+acf,🔧,Add
+ucf,🔧,Update
+```
+
+These templates mean the following table.
+
+<br>
+
+| keyword | gitmoji |  type   |
+| :-----: | :-----: | :-----: |
+|   bug   |    🐞    |   Fix   |
+|   imp   |    ⚡️    | Improve |
+|   mg    |    🔀    |  Merge  |
+|   acf   |    🔧    |   Add   |
+|   ucf   |    🔧    | Update  |
+
+* `bug|{message}` => `🐞 Fix: {message}`
+* `imp|{message}` => `⚡️ Improve: {message}`
+* `mg|{message}` => `🔀 Merge: {message}`
+* `acf|{message}` => `🔧 Add: {message}`
+* `ucf|{message}` => `🔧 Update: {message}`
+* `fix|{message}` => `commit failure`
+
 
 
 ## Examples
@@ -35,5 +67,5 @@ This message will be converted to `✨ Add: new feature`.
 git commit -m "Add|new feature"
 ```
 
-If `Add` is undefined type in the template, the commit fails.
+If `Add` is undefined `keyword` in the template, the commit fails.
 
