@@ -11,10 +11,10 @@ IFS=$OLDIFS
 CURRENT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_DIR="$(dirname $(dirname ${CURRENT_DIR}))"
 
-# ../../.commit-msg-templates
-FILE_DIR=${REPO_DIR}/.commit-msg-templates
+# ../../.commit-message-templates
+FILE_DIR=${REPO_DIR}/.commit-message-templates
 
-# Reads a file ".commit-msg-templates".
+# Reads a file ".commit-message-templates".
 [ ! -f ${FILE_DIR} ] && { echo "File not found: ${FILE_DIR}"; exit 99; }
 
 OLDIFS=$IFS
