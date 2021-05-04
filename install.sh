@@ -33,4 +33,5 @@ CONTENT=(
 
 printf "%s\n" "${CONTENT[@]}" > .git/hooks/commit-message-converter.sh
 chmod +x .git/hooks/commit-message-converter.sh
-curl -ksL "https://raw.githubusercontent.com/ImSejin/git-commit-message-converter/main/commit-message-converter.sh" >> .git/hooks/commit-message-converter.sh
+URL="https://raw.githubusercontent.com/ImSejin/git-commit-message-converter/main/commit-message-converter.sh"
+curl -ksL ${URL} >> .git/hooks/commit-message-converter.sh
