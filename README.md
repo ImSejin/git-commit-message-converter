@@ -9,7 +9,7 @@ This intercepts your commit message and converts to the predefined template.
 2. Place two files in the your repository path.
 3. Execute `install.sh`.
 4. Customize `.commit-message-templates` to your rule.
-5. Commit with message like `{type}|{message}`
+5. Commit with message like `{keyword}|{message}`.
 
 
 
