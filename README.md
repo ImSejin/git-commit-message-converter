@@ -49,23 +49,22 @@ These templates mean the following table.
 * `mg|{message}` => `🔀 Merge: {message}`
 * `acf|{message}` => `🔧 Add: {message}`
 * `ucf|{message}` => `🔧 Update: {message}`
-* `fix|{message}` => `commit failure`
 
 
 
 ## Examples
 
 ```bash
-git commit -m "add|new feature"
+git commit -m "imp|performance for data validation"
 ```
 
-This message will be converted to `✨ Add: new feature`.
+This message will be converted to `⚡️ Improve: performance for data validation`.
 
 
 
 ```bash
-git commit -m "Add|new feature"
+git commit -m "improve|performance for data validation"
 ```
 
-If `Add` is undefined `keyword` in the template, the commit fails.
+If `improve` is undefined `keyword` in the template, the commit fails.
 
